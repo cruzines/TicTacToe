@@ -139,8 +139,6 @@ function TicTacToe() {
 
   return (
     <div>
-      <div>
-        <p>Please enter players name</p>
         <div>
           <form onSubmit={handleSubmit} className="form">
             <div>
@@ -177,7 +175,7 @@ function TicTacToe() {
             </Button>
           </form>
         </div>
-      </div>
+      
 
       <div>
         <table>
