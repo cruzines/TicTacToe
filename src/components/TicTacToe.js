@@ -117,7 +117,7 @@ function TicTacToe() {
       }
     }
     //check if all cells were clicked and there is no winner
-    if (clicked.length === 9 && !winner) {
+    if (!winner && clicked.length === 9) {
       setTie(true);
     }
   };
@@ -243,7 +243,7 @@ function TicTacToe() {
             </Dialog>
           </div>
         )}
-        {tie && (
+        {!winner && tie && (
           <div>
             <Dialog
               open={handleClickOpen}
