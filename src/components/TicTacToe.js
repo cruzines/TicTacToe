@@ -23,7 +23,7 @@ function TicTacToe() {
     setPlayerO(playerO);
   };
   //winning dialog
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -155,7 +155,7 @@ function TicTacToe() {
               </div>
             </div>
 
-            <div class="field">
+            <div className="field">
               <label className="label">Player O</label>
               <div>
                 <input
